@@ -1,4 +1,4 @@
-package config
+package Config
 
 import (
 	"fmt"
@@ -24,6 +24,7 @@ func BuildDBConfig() *DBConfig {
 		DBName:   "kowapets",
 		Password: "password",
 	}
+	return &dbConfig
 }
 
 func DbURL(dbConfig *DBConfig) string {
