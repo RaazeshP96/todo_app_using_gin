@@ -1,8 +1,9 @@
-package Controllers
+package controllers
 
 import (
 	"net/http"
 
+	Models "github.com/RaazeshP96/todo_app_using_gin/models"
 	"github.com/gin-gonic/gin"
 )
 

@@ -1,4 +1,4 @@
-package Routes
+package routes
 
 import (
 	"github.com/gin-gonic/gin"
@@ -11,7 +11,7 @@ func SetupRouter() *gin.Engine {
 		v1.POST("todo",Controllers.CreateATodo)
 		v1.GET("todo/:id",Controllers.UpdateATodo)
 		v1.DELETE("todo/:id",Controllers.DeleteATodo)
-		vq.PUT("todo/:id",Controllers.update)
+		v1.PUT("todo/:id",Controllers.update)
 
 	}
 	return r

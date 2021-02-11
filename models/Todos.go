@@ -1,9 +1,9 @@
-package Models
+package models
 
 import (
 	"fmt"
 
-	"github.com/RaazeshP96/todo_app_using_gin/Config"
+	Config "github.com/RaazeshP96/todo_app_using_gin/config"
 )
 
 func GetAllTodos(todo *[]Todo) (err error) {

@@ -1,7 +1,9 @@
-package Config
+package config
 
 import (
 	"fmt"
+	"os"
+	"strconv"
 
 	"github.com/jinzhu/gorm"
 )
@@ -17,12 +19,13 @@ type DBConfig struct {
 }
 
 func BuildDBConfig() *DBConfig {
+	port, _ := strconv.Atoi(os.Getenv("Port"))
 	dbConfig := DBConfig{
-		Host:     "localhost",
-		Port:     3306,
-		User:     "rajesh",
-		DBName:   "kowapets",
-		Password: "password",
+		Host:     os.Getenv("Host"),
+		Port:     port,
+		User:     os.Getenv("User"),
+		DBName:   os.Getenv("DBName"),
+		Password: os.Getenv("Password"),
 	}
 	return &dbConfig
 }

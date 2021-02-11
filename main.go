@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 
-	"github.com/RaazeshP96/todo_app_using_gin/Config"
-	"github.com/RaazeshP96/todo_app_using_gin/Models"
-	"github.com/RaazeshP96/todo_app_using_gin/Routes"
+	Config "github.com/RaazeshP96/todo_app_using_gin/config"
+	Models "github.com/RaazeshP96/todo_app_using_gin/models"
+	Routes "github.com/RaazeshP96/todo_app_using_gin/routes"
 	"gorm.io/gorm"
 )
 
